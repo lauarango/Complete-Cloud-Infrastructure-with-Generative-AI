@@ -4,7 +4,7 @@ This repository is the step-by-step from AWS Solutions Architect CloudQuest. Thi
 This is the diagram of this lab: 
 
 ![image](https://github.com/user-attachments/assets/2ca713bb-9d38-492d-9ce3-d5f6f5635422)
-Author: SkillBuilder AWS
+<sup>Author: SkillBuilder AWS</sup>
 
 [Important CDK Concepts](Important-CDK-Concepts.md)
 
