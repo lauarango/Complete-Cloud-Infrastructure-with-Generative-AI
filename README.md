@@ -6,7 +6,7 @@ This is the diagram of this lab:
 ![image](https://github.com/user-attachments/assets/2ca713bb-9d38-492d-9ce3-d5f6f5635422)
 Author: SkillBuilder AWS
 
-[Important CDK Concepts](Complete-Cloud-Infrastructure-with-Generative-AI/Important-CDK-Concepts.md)
+[Important CDK Concepts](Important-CDK-Concepts.md)
 
 > Important concepts to have in mind
 
