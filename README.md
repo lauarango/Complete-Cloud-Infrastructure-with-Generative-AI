@@ -60,5 +60,20 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
     ![image](https://github.com/user-attachments/assets/7315ca8d-874f-4b88-b96f-91201a19420d)
     <sup>Author: SkillBuilder AWS</sup>
     
-9. Go to the cdkapp_stack.py 
+9. Open the cdkapp_stack.py, initially it should appear something like this:
+    
+    ![image](https://github.com/user-attachments/assets/ccbcc53c-dc84-4c9b-802f-5b940a5a3f8e)
+
+    Change the content inside the () to:
+
+    ![image](https://github.com/user-attachments/assets/d2011fe1-3ae6-48bb-a256-02b55af0f464)
+
+10. Delete this part of the code
+
+    ![image](https://github.com/user-attachments/assets/f924c23c-0a6d-424f-8164-e8d8d7b5395c)
+
+
+    
+
+
     
