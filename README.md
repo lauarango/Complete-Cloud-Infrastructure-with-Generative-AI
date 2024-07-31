@@ -21,9 +21,9 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
 
 1. In the Cloud9 environment, create a folder for the CDK App named cdkapp = mkdir cdkapp
    
-3. Enter the folder cdkapp = cd cdkapp
+2. Enter the folder cdkapp = cd cdkapp
    
-5. Initialize the cdk process running = cdk init -a app -l=python
+3. Initialize the cdk process running = cdk init -a app -l=python
 
    Review of each part of the command:
 
@@ -31,18 +31,18 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
    - Using the "-a" option, you can specify an app name.
    - Using the "-l" option, you can specify the programming language
    
-7. Create a virtual environment using = python3.8 -m venv .venv (in case you want to delete the venv created use = rm -rf .venv)
+4. Create a virtual environment using = python3.8 -m venv .venv (in case you want to delete the venv created use = rm -rf .venv)
    
-8. Activate the venv created using = source .venv/bin/activate
+5. Activate the venv created using = source .venv/bin/activate
    
-9. Create a txt file for the libraries required (aws-cdk library). Which are the mentioned below:
+6. Create a txt file for the libraries required (aws-cdk library). Which are the mentioned below:
    
     aws-cdk-lib=2.137.0
     constructs>=10.0.0,<11.0.0
    
-10. Install the requirements.txt created using = pip3.8 install -r requirements.txt
+7. Install the requirements.txt created using = pip3.8 install -r requirements.txt
     
-11. Put the userdata.sh file attached to the lab folder inside the Cloud9 cdkapp folder
+8. Put the userdata.sh file attached to the lab folder inside the Cloud9 cdkapp folder
 
       ![image](https://github.com/user-attachments/assets/64248511-6a3f-4789-bfcf-501e4cf9ee83)
 
@@ -54,13 +54,13 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
    - The database_populate function connects to the Amazon RDS database (DB) cluster and creates a population table with the data.
    - The application function starts the application
 
-7. Go to the file cdk.json = cd cdkapp/tests/cdk.json
-8. Change the "true" value to "false"
+9. Go to the file cdk.json = cd cdkapp/tests/cdk.json
+10. Change the "true" value to "false"
 
     ![image](https://github.com/user-attachments/assets/7315ca8d-874f-4b88-b96f-91201a19420d)
     <sup>Author: SkillBuilder AWS</sup>
     
-9. Open the cdkapp_stack.py, initially it should appear something like this:
+11. Open the cdkapp_stack.py, initially it should appear something like this:
     
     ![image](https://github.com/user-attachments/assets/ccbcc53c-dc84-4c9b-802f-5b940a5a3f8e)
 
@@ -68,11 +68,11 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
 
     ![image](https://github.com/user-attachments/assets/d2011fe1-3ae6-48bb-a256-02b55af0f464)
 
-10. Delete this part of the code
+12. Delete this part of the code
 
     ![image](https://github.com/user-attachments/assets/f924c23c-0a6d-424f-8164-e8d8d7b5395c)
 
-11. In the cdk.json (cdkapp/tests/cdk.json)
+13. In the cdk.json (cdkapp/tests/cdk.json)
 
     - Create a virtual private cloud (VPC), in the top cdkapp_stack.py window, type:
       
@@ -221,15 +221,17 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
 
 - To synthesize the CDK stack, in the bottom terminal window, run:
 
-         cdk synth
-  - 1. Review the stack details.
-    2. To deploy the cdkapp stack, run:
+         (.venv) AWSLabsUser-suTeqEKJc48ky7spKF6kMJ:~/environment/cdkapp/cdkapp (master) $ cd ..
+         (.venv) AWSLabsUser-suTeqEKJc48ky7spKF6kMJ:~/environment/cdkapp (master) $ cdk synth
+  
+1. Review the stack details.
+2. To deploy the cdkapp stack, run:
 
            cdk deploy
    
-    3. Type ***y*** after reviewing
+3. Type ***y*** after reviewing
        
-       ![image](https://github.com/user-attachments/assets/b5f202fe-f81e-4f82-b0ff-fd3f67323781)
+   ![image](https://github.com/user-attachments/assets/b5f202fe-f81e-4f82-b0ff-fd3f67323781)
 
   - Review the stack components that are being deployed by the cdk process.
 
