@@ -14,4 +14,17 @@ To have in mind ***both AWS CDK and CodeWhisperer are integrated directly to AWS
 
 Finally, when the code is ***completed*** and ***tested***, it synthesized into a AWS CloudFormation template, which ***deploys*** the resources and applications that were defined in the CDK code.
 
+> [!TIP]
+> Build the template in the next order:
 
+1. In the Cloud9 environment, create a folder for the CDK App.
+   
+3. Create a virtual environment using = python3.8 -m venv .venv (in case you want to delete the venv created use = rm -rf .venv)
+   
+5. Activate the venv created using = source .venv/bin/activate
+   
+7. Create a txt file for the libraries required (aws-cdk library). Which are the mentioned below:
+   
+    aws-cdk-lib=2.137.0
+    constructs>=10.0.0,<11.0.0
+9. Install the requirements.txt
