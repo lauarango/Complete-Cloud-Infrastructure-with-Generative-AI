@@ -72,6 +72,13 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
 
     ![image](https://github.com/user-attachments/assets/f924c23c-0a6d-424f-8164-e8d8d7b5395c)
 
+11. In the cdk.json (cdkapp/tests/cdk.json)
+
+    - Create a virtual private cloud (VPC), in the top cdkapp_stack.py window, type:
+      
+           # create a vpc with IpAddresses 10.10.0.0/16, a NAT gateway, a public subnet, PRIVATE_WITH_EGRESS subnet and a RDS subnet
+    - 
+
 
     
 
