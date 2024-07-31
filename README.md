@@ -77,7 +77,161 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
     - Create a virtual private cloud (VPC), in the top cdkapp_stack.py window, type:
       
            # create a vpc with IpAddresses 10.10.0.0/16, a NAT gateway, a public subnet, PRIVATE_WITH_EGRESS subnet and a RDS subnet
-    - 
+
+      ![image](https://github.com/user-attachments/assets/127dc450-6448-4f6c-882b-84bf38b556a2)
+
+    - To create a security group for the load balancer, type:
+
+            # create a security group for the load balancer
+      
+      ![image](https://github.com/user-attachments/assets/06c7fe04-1ce4-4180-b43a-cbf152991953)
+
+    - To create a security group for the RDS instance, type:
+      
+            # create a security group for the RDS instance
+      
+    - To create a security group for the EC2 instance, type:
+
+            # create a security group for the EC2 instance
+      
+    - To add inbound rules to the load balancer, type:
+
+            # add ingress rules for the load balancer to allow all traffic
+      
+      ![image](https://github.com/user-attachments/assets/5626d76e-2369-4b52-bcb1-8ccd097f292f)
+
+    - To allow traffic from the load balancer to the EC2 instance, type:
+
+            # add ingress rule for the EC2 instance to allow 8443 traffic from the load balancer
+      
+    - To allow traffic for the RDS DB instance from the EC2 instance on port 3306, type:
+
+            # add ingress rule for the RDS instance to allow 3306 from the EC2 instance
+      
+    - To allow traffic for the RDS DB instance from the EC2 instance on port 22, type:
+
+            # add ingress rule for the RDS instance to allow 22 from the EC2 instance
+      
+    - To create an Amazon Aurora MySQL-Compatible Edition cluster, type:
+
+            # create an rds aurora mysql cluster
+   
+      ![image](https://github.com/user-attachments/assets/dae555e0-bc77-4732-8bea-2910cfcc2466)
+   
+    - On the next line, to use predefined credentials, type:
+
+            # credentials using testuser and password1234!
+   
+      ![image](https://github.com/user-attachments/assets/11a776a5-3185-4473-80a5-e5e0d7be8cb4)
+
+    - Press Enter, and then, to get suggestions for the default database name, type:
+
+            # add default database name Population
+      
+      ![image](https://github.com/user-attachments/assets/0dcfdf50-0e59-4056-9040-b45ebfa78497)
+
+    - For instance_props, type:
+      
+            instance_props={
+      At the end of the instance_props statement, press Enter and type:
+
+            # add a vpc to the rds instance
+      
+      ![image](https://github.com/user-attachments/assets/9c0cb0fd-e543-4383-95b2-99939136a0e7)
+
+    - To add a security group to the RDS instance, type:
+
+            # add a security group to the rds instance
+      
+    - To add a private subnet to the RDS DB instance, type:
+
+            # add a private subnet to the rds instance
+      
+    - Press Enter, and then, based on the CodeWhisperer suggestion, choose to close instance_props and add instances=1 to the RDS DB cluster.
+
+         - Be sure to add only one instance to the cluster definition.
+         - Be sure to close the cluster definition.
+
+    Should look like this:
+
+      ![image](https://github.com/user-attachments/assets/c503880b-af62-4540-8828-8ea249e77eaf)
+      ![image](https://github.com/user-attachments/assets/3c203ec5-a579-444a-9247-335a7efd86ac)
+
+    - To create an Amazon Linux 2 Image, type:
+
+            # create an Amazon Linux 2 image
+      
+      ![image](https://github.com/user-attachments/assets/c2cc65b5-80ac-4c88-87c5-4fcd2f49e7ba)
+
+    - To read the userdata.sh file, type:
+
+            # read userdata file from cdkapp directory
+
+      ![image](https://github.com/user-attachments/assets/8aed3875-abfe-4f05-9c11-40c395dd0265)
+
+    - To create an EC2 instance for the web server in a private egress subnet, type:
+
+            # create a t2.small ec2 instance for the web server in a private egress subnet and vpc.availability_zones[0]
+      
+      ![image](https://github.com/user-attachments/assets/f9a983d8-bb7b-4e33-9564-4dc430428d55)
+
+
+    - To add an existing role with the name, ec2_instance_role, type:
+
+            # add an existing role with name ec2_instance_role
+      
+      ![image](https://github.com/user-attachments/assets/0e18775c-1bae-48a2-9e62-7905dc98f406)
+
+    - To create a load balancer, type:
+
+            # create a load balancer for the web server
+
+    - To create a listener for the load balancer, type:
+
+            # create a listener for the load balancer
+
+      ![image](https://github.com/user-attachments/assets/8de1c0ac-899d-4a32-8b4b-7edc21d53f72)
+
+    - To add targets to the load balancer, type:
+
+            # add targets to the load balancer
+      
+      - Be sure to add port=80 to the construct.
+      - If you see a targets=[ec2_instance] field, remove it from the listener.add_targets
+        
+        ![image](https://github.com/user-attachments/assets/ad9db090-6c38-4146-8a3a-25cd974c880c)
+        
+    - To deploy the web server after the the RDS DB cluster is available, type:
+
+            # add depends on for the web server to wait for the RDS cluster
+      
+    - To deploy the listener after the web server is up and running, type:
+
+            # add depends on for the listener to wait for the web server
+      
+        ![image](https://github.com/user-attachments/assets/9c8c3c91-e21e-4bd9-9cf4-b428e475fb7e)
+
+    - 1. On the top navigation bar, click File to expand the dropdown menu.
+      2. Choose Save
+
+    The bootstrap process has been run as part of the lab prebuild
+    
+> [!NOTE]  
+> Bootstrapping is the process of provisioning resources for the AWS CDK before you can deploy AWS CDK apps into AWS environment
+
+- To synthesize the CDK stack, in the bottom terminal window, run:
+
+         cdk synth
+  -
+
+      
+
+
+
+
+
+      
+
 
 
     
