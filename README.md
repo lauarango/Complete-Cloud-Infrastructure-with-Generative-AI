@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/06f579e3-3d5c-4269-b962-7a323c1acb15)# Complete Cloud Infrastructure with Generative AI
+# Complete Cloud Infrastructure with Generative AI
 This repository is from AWS Solutions Architect CloudQuest. This solution demonstrates the speed up adoption of Infrastructure as Code (IaC) to deploy applications and infrastructure in a repeatable manner.
 
 This is the diagram of this lab: 
