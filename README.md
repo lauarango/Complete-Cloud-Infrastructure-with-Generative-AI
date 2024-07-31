@@ -269,6 +269,10 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
    3. Review the Availability Zone in which the instance is deployed.
 
          ![image](https://github.com/user-attachments/assets/ab7d9da9-dbf5-458d-8032-4c355a2d1f09)
+      
+   - Done!
+         ![image](https://github.com/user-attachments/assets/3f3df299-645a-4fe3-af38-53d8b1ae5d05)
+
 
 
 
