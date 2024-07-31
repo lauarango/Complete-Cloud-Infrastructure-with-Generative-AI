@@ -203,11 +203,11 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
         
     - To deploy the web server after the the RDS DB cluster is available, type:
 
-            # add depends on for the web server to wait for the RDS cluster
+            # add depends on for the web server to wait for the RDS cluster to be available
       
     - To deploy the listener after the web server is up and running, type:
 
-            # add depends on for the listener to wait for the web server
+            # add depends on for the listener to wait for the web server to be available
       
         ![image](https://github.com/user-attachments/assets/9c8c3c91-e21e-4bd9-9cf4-b428e475fb7e)
 
