@@ -1,4 +1,4 @@
-# Complete Cloud Infrastructure with Generative AI
+![image](https://github.com/user-attachments/assets/06f579e3-3d5c-4269-b962-7a323c1acb15)# Complete Cloud Infrastructure with Generative AI
 This repository is from AWS Solutions Architect CloudQuest. This solution demonstrates the speed up adoption of Infrastructure as Code (IaC) to deploy applications and infrastructure in a repeatable manner.
 
 This is the diagram of this lab: 
@@ -222,9 +222,62 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
 - To synthesize the CDK stack, in the bottom terminal window, run:
 
          cdk synth
-  -
+  - 1. Review the stack details.
+    2. To deploy the cdkapp stack, run:
 
-      
+           cdk deploy
+   
+    3. Type ***y*** after reviewing
+       
+       ![image](https://github.com/user-attachments/assets/b5f202fe-f81e-4f82-b0ff-fd3f67323781)
+
+  - Review the stack components that are being deployed by the cdk process.
+
+ > [!NOTE]
+ > The deployment takes up to 15 minutes to be completed
+
+   - In the other browser tab, navigate to the AWS CloudFormation console.
+   - In the Stacks section, under Status, review to ensure that the status for the stack, CdkappStack, is CREATE_COMPLETE.
+   - Click CdkappStack.
+   
+   - Follow the next images:
+
+        ![image](https://github.com/user-attachments/assets/6dea0d27-c7b8-4780-bd93-6e9b3364d317)
+        ![image](https://github.com/user-attachments/assets/0bb4efc7-7850-4653-b77f-b580c8e41839)
+        ![image](https://github.com/user-attachments/assets/f0e00015-8813-420f-9fbb-badb2090c66b)
+        ![image](https://github.com/user-attachments/assets/c1207838-d289-4e2e-a9eb-b32bcc2b2df1)
+        ![image](https://github.com/user-attachments/assets/d8ec5dfc-a07a-4e12-babd-958c8aa20aa2)
+        ![image](https://github.com/user-attachments/assets/bd481899-65a2-475f-9870-70f35d96e558)
+        ![image](https://github.com/user-attachments/assets/531f8322-7e9c-4bb9-bb87-2832f4f53166)
+        ![image](https://github.com/user-attachments/assets/bbfedc42-7d75-434e-89ef-738f0cd27ac1)
+        ![image](https://github.com/user-attachments/assets/dff1ef2f-6e69-4798-b643-db8a05ac7b19)
+
+   - Under Load balancer, click the provided load balancer name, open the Load Balancer link.
+
+        ![image](https://github.com/user-attachments/assets/54a63364-c8dd-49ba-b0f0-cb47bfa05fdf)
+
+   - Under DNS name, click the copy icon to copy the load balancer URL.
+     
+        ![image](https://github.com/user-attachments/assets/345e7f49-fb2c-467d-8215-c7363353a017)
+
+   - After seeing the status of the load balancer as Active, follow the next final steps!
+     
+   1. To access the census application, in a new browser tab (or window) address bar, paste the load balancer URL that you just copied (not shown).
+
+   2. You should see the Population Facts page with year and country options.
+
+   3. Review the Availability Zone in which the instance is deployed.
+
+         ![image](https://github.com/user-attachments/assets/ab7d9da9-dbf5-458d-8032-4c355a2d1f09)
+
+
+
+
+
+
+
+
+
 
 
 
