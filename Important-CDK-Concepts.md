@@ -17,6 +17,9 @@ AWS CloudFormation is a service provided by Amazon Web Services (AWS) that allow
 - Drift Detection: A feature that detects changes to stack resources outside of CloudFormation.
 
 - Libraries: Pre-packaged modules for common use cases, providing reusable, higher-level constructs.
+
+## AWS CDK (Cloud Development Kit)
+The AWS Cloud Development Kit (CDK) is an open-source software development framework to define your cloud application resources using familiar programming languages. It allows you to write infrastructure as code using high-level, object-oriented languages like TypeScript, JavaScript, Python, Java, and C#.
   
 #### Construct
 
