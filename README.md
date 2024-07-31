@@ -5,6 +5,8 @@ This is the diagram of this lab:
 
 ![image](https://github.com/user-attachments/assets/2ca713bb-9d38-492d-9ce3-d5f6f5635422)
 <sup>Author: SkillBuilder AWS</sup>
+
+The app that is going to be deployed in this lab is a census application that displays the population values from different years and countries ***created by AWS***.
 > [!NOTE]
 > [Important CDK Concepts](Important-CDK-Concepts.md)
 
@@ -27,4 +29,14 @@ Finally, when the code is ***completed*** and ***tested***, it synthesized into 
    
     aws-cdk-lib=2.137.0
     constructs>=10.0.0,<11.0.0
-9. Install the requirements.txt
+   
+9. Install the requirements.txt created using = pip3.8 install -r requirements.txt
+    
+11. Put the userdata.sh file attached to the lab folder inside the Cloud9 cdkapp folder
+
+    Short review of the userdata.sh file contents:
+
+ - This file contains the libraries to be downloaded for the census application to run on an Amazon Elastic Compute Cloud (Amazon EC2) instance.
+ - The vpcapp is the census application that displays the population values from different years and countries.
+ - The database_populate function connects to the Amazon RDS database (DB) cluster and creates a population table with the data.
+ - The application function starts the application
