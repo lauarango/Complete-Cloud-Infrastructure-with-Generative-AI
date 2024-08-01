@@ -33,6 +33,11 @@ Types of Constructs:
 
 - Level 3 (L3) Constructs: Even higher-level abstractions that often encapsulate multiple L2 constructs, representing complex infrastructure patterns.
 
+Load Balancer function
+
+Takes the requests from clients and distributes them across targets in a target group. For this to work ensure that you have a VPC with at least one public subnet in each of the availability zones used by your targets.
+
 Listener
 
 A listener is a process that checks for the connection requests, using the protocol and port that you configure.
+
