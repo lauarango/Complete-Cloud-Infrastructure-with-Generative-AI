@@ -32,3 +32,7 @@ Types of Constructs:
 - Level 2 (L2) Constructs: High-level constructs that provide a more abstract and easier-to-use interface. They often encapsulate multiple L1 constructs.
 
 - Level 3 (L3) Constructs: Even higher-level abstractions that often encapsulate multiple L2 constructs, representing complex infrastructure patterns.
+
+Listener
+
+A listener is a process that checks for the connection requests, using the protocol and port that you configure.
